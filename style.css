@@ -1,0 +1,56 @@
+h1 {
+    background-image: url('images/sweets3.jpeg'); /* 画像のパスを指定 */
+    background-size: cover; /* 画像をh1のサイズに合わせてカバー */
+    background-position: center; /* 画像を中央に配置 */
+    color: #f0de41; /* テキストの色を白に設定 */
+    padding: 50px; /* 余白を追加 */
+    text-align: center; /* テキストを中央揃え */
+    border-radius: 10px; /* 角を丸くする（オプション） */
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.image-container img {
+    display: block;
+    width: 150px; /* 画像のサイズを調整 */
+    height: auto;
+    border-radius: 10px; /* 角を丸くする */
+    cursor: pointer; /* マウスカーソルをポインターに変更 */
+    z-index: 1; /* クリック可能にする */
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 10px; /* 文字の位置を調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景色と透明度を調整 */
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0;
+    z-index: 2; /* テキストが画像の上に表示されるようにする */
+}
+    
+button img {
+    width: 100px; /* 画像の幅を調整 */
+    height: auto; /* 画像の高さは自動調整 */
+    }
+
+.result p {
+    font-size: 20px;
+    margin: 10px 0;
+}
